@@ -13,7 +13,7 @@ const logger = winston.createLogger({
   transports: [new winston.transports.Console()],
 });
 
-const apiKey = '590b5dc12ebc120eb147901bce11b9fb' ;
+const apiKey = '590b5dc12ebc120eb147901bce11b9fb' ; //PUT YOUR API KEY HERE
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
