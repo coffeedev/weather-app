@@ -175,7 +175,7 @@ resource "aws_instance" "ubuntu_server" {
       "cd /home/ubuntu/working/app",
       "chmod 755 *.sh",
       "sudo ./dockerInstall.sh",
-      "sudo ./buildDocker.sh"
+      "sudo ./buildDocker.sh ${var.docker_tag} ${var.docker_pat}"
     ]
   }
 

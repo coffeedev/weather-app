@@ -25,6 +25,16 @@ variable "public_subnets" {
   }
 }
 
+variable "docker_pat" {
+  type = string
+  default = ""
+}
+
+variable "docker_tag" {
+  type = string
+  default = "4.0"
+}
+
 variable "variables_sub_cidr" {
   description = "CIDR Block for the Variables Subnet"
   type        = string
